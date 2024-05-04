@@ -31,7 +31,10 @@ public class HelloWorldMojo extends AbstractMojo {
                         if (line.contains("Mapping")) {
                             if (beforeClassDeclaration) {
                                 Matcher matcher = EndpointMethodInfo.endpointPattern.matcher(line.trim());
-                                if (matcher.find()) topLevelEndpoint = matcher.group(1);
+                                if (matcher.find()) {
+                                    topLevelEndpoint = matcher.group(1);
+                                    continue;
+                                }
 
                             }
                             EndpointMethodInfo data = new EndpointMethodInfo(line.trim());
