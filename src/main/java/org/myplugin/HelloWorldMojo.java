@@ -97,7 +97,7 @@ public class HelloWorldMojo extends AbstractMojo {
             throw new RuntimeException(e);
         }
         for (Map.Entry<String, List<EndpointMethodInfo>> entry : annotations.entrySet()) {
-            System.out.println("File: " + entry.getKey());
+            System.out.println("\nFile: " + entry.getKey());
             for (EndpointMethodInfo methodInfo : entry.getValue()) {
                 System.out.println("\tMethod: " + methodInfo.method);
                 System.out.println("\tEndpoint: " + methodInfo.endpoint);
