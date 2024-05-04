@@ -1,7 +1,9 @@
 # myplugin (spring-boot-endpoint-finder)
 This plugin was created after a session from Programming Pathshala on Maven, which involved a demonstration of creating Maven Plugins.
 
-The plugin can identify which api endpoints are defined in which controller in a SpringBoot project, assuming that all the RequestMappings are found in a folder namesd controllers or controller or web or rest. If the folder is not found, it just goes to the path given in dummyLocation variable.
+The plugin can identify which API endpoints are defined in which controller in a SpringBoot project, assuming that all the RequestMappings are found in a folder named controllers or controller or web or rest. If the folder is not found, it just goes to the path given in dummyLocation variable.
+
+In future, this could be extended to output swagger.json file and auto-document the API.
 
 <img width="1412" alt="Screenshot 2024-05-05 at 1 08 28 AM" src="https://github.com/Vyvy-vi/myplugin/assets/62864373/230d5369-74a8-452a-92e7-f413e6f4de45">
 <img width="1412" alt="Screenshot 2024-05-05 at 1 08 47 AM" src="https://github.com/Vyvy-vi/myplugin/assets/62864373/5e0b4497-de6c-40ae-abf1-350519a07bee">
@@ -54,5 +56,3 @@ mvn install
 <img width="327" alt="Screenshot 2024-05-05 at 1 06 24 AM" src="https://github.com/Vyvy-vi/myplugin/assets/62864373/6cb220ba-6dd8-43df-8b32-c1456f63e8c0">
 6. Click on the new `my` dropdown in Plugins (it might have a different name?) and double click my:hello. This should run the plugin for the project, and the output should try to find a controllers/controller/rest/web folder and contain all the mappings from there.
 <img width="404" alt="Screenshot 2024-05-05 at 1 07 03 AM" src="https://github.com/Vyvy-vi/myplugin/assets/62864373/237c12a7-1320-492b-8d12-0ab912aaa0ad">
-
-
