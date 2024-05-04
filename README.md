@@ -1,4 +1,4 @@
-# myplugin
+# myplugin (spring-boot-endpoint-finder)
 This plugin was created after a session from Programming Pathshala on Maven, which involved a demonstration of creating Maven Plugins.
 
 The plugin can identify which api endpoints are defined in which controller in a SpringBoot project, assuming that all the RequestMappings are found in a folder namesd controllers or controller or web or rest. If the folder is not found, it just goes to the path given in dummyLocation variable.
